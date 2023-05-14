@@ -13,7 +13,7 @@ REST web services and XML data exchange are used for the integration. Input must
  # Configuration
 GoProj is configured as follows via the *goproj.xml* file:
 
-**threads:** number of threads used by the solving procedure. It affects the performance directly.
+**threads:** number of threads used by the solving procedure. It affects the performance directly.  
 **port:** the TCP/IP port on which to listen for requests,  the default value is 9100.
 
 There are other parameters reserved for developers who know the details of the solving process. They impact directly the performance and the solver behaviour, so you must be certain of what you are doing before modifying them.
