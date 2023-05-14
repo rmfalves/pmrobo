@@ -1,1 +1,1 @@
-# goproj
+GoProj is a streamlined cloud-based project scheduling engine. Given project constraints such as task dependencies, resource capacities, and task demands, it establishes task start dates so that all constraints are met and the project is completed in the shortest possible timeframe.
