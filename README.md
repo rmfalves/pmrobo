@@ -1,19 +1,20 @@
 # Overview
-GoProj is a cloud-based, multi-threaded project scheduling engine written in Go. Its purpose is to integrate with project management tools in order to provide them with autoscheduling capabilities as simply as possible. Given project constraints such as task dependencies, resource capacities, and task demands, it establishes task start dates so that all constraints are met and the project is completed in the shortest possible timeframe.
+PMRobo is a cloud-based, multi-threaded project scheduling engine written in Go. Its purpose is to integrate with project management tools in order to provide them with autoscheduling capabilities as simply as possible. Given project constraints such as task dependencies, resource capacities, and task demands, it establishes task start dates so that all constraints are met and the project is completed in the shortest possible timeframe.
 
 REST web services and XML data exchange are used for the integration. Input must include task durations, task dependencies, resource capacities, and task resource consumption. The output includes the minimum feasible timeframe attained and the corresponding task dates, so that task dependencies are met and the total resource consumption by tasks does not exceed any resource capacity at any time.
 
-# Installing and Running
+# Installation
+The *binaries* folder contains binary files for Linux and Windows.  If you want to download and compile the source code, do the following:
  1. Install the [Golang framework](https://go.dev/doc/install) if it is not already installed.
- 2. Download the folders `goproj` and `goproj_rest` to the $GO/src directory.
- 3. `cd $GO/src/goproj_rest`
+ 2. Download the folders `goproj` and `pmrobo` to your $GO/src directory.
+ 3. `cd $GO/src/pmrobo`
  4. `go build `
- 5. Execute the `goproj_rest` executable file.  If administrative privileges are required execute instead `sudo goproj_rest`
+ 5. Execute the `pmrobo` executable file.
  6. If everything is in order, you should now have a service operating and listening for XML requests.
  # Configuration
-GoProj is configured as follows via the *goproj.xml* file:
+PMRobo is configured as follows via the *pmrobo.xml* file:
 
-**threads:** number of threads used by the solving procedure. It affects the performance directly.  
+**threads:** number of threads used by the solving procedure. It affects the performance directly.
 **port:** the TCP/IP port on which to listen for requests,  the default value is 9100.
 
 There are other parameters reserved for developers who know the details of the solving process. They impact directly the performance and the solver behaviour, so you must be certain of what you are doing before modifying them.
@@ -21,18 +22,18 @@ There are other parameters reserved for developers who know the details of the s
  ## Request structure
 |REST Parameter|Value|
 |--|--|
-|URL|`server`/schedule:`port` where `server` is the IP/domain of the host on which the *goproj_rest* service is running, and `port` is the assigned TCP/IP port, which by default is 9100|
+|URL|`server`/schedule:`port` where `server` is the IP/domain of the host on which the *pmrobo* service is running, and `port` is the assigned TCP/IP port, which by default is 9100|
 |Action|POST|
-|Content|XML string containing project specifications. For more information regarding the input XML data, please refer to [this tutorial](https://github.com/rmfalves/goproj/blob/main/TUTORIAL.md)|
+|Content|XML string containing project specifications. For more information regarding the input XML data, please refer to [this tutorial](https://github.com/rmfalves/pmrobo/blob/main/TUTORIAL.md)|
 ## Result
 
-XML string containing the project schedule. For more information regarding the returned XML data, please refer to [this tutorial](https://github.com/rmfalves/goproj/blob/main/TUTORIAL.md)
+XML string containing the project schedule. For more information regarding the returned XML data, please refer to [this tutorial](https://github.com/rmfalves/pmrobo/blob/main/TUTORIAL.md)
  
 # Acknowledgements and License
 
 The [Gin-Gonic library](https://github.com/gin-gonic/gin) on which this project depends to implement REST web services is [MIT licensed](https://opensource.org/license/mit/).
 
-The GoProj code is AGPL licensed as follows:
+The PMRobo code is AGPL licensed as follows:
 
 GNU Affero General Public License version 3
 

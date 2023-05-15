@@ -1,0 +1,11 @@
+<config>
+    <threads>4</threads>
+    <port>9100</port>
+    <step>10</step>
+    <times>
+        <time>100</time>
+        <time>1000</time>
+        <time>5000</time>
+        <time>30000</time>
+    </times>
+</config>
