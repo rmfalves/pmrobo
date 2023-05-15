@@ -14,10 +14,10 @@ The *binaries* folder contains binary files for Linux and Windows.  If you want 
  # Configuration
 PMRobo is configured as follows via the *pmrobo.xml* file:
 
-**threads:** number of threads used by the solving procedure. It affects the performance directly.
+**threads:** number of threads used by the solving procedure. It affects the performance directly.  
 **port:** the TCP/IP port on which to listen for requests,  the default value is 9100.
 
-There are other parameters reserved for developers who know the details of the solving process. They impact directly the performance and the solver behaviour, so you must be certain of what you are doing before modifying them.
+There are other parameters reserved for developers who know the details of the solving process. They impact directly the performance and the solver behaviour, so you must be certain that you understand what you are doing before modifying them.
  # Usage
  ## Request structure
 |REST Parameter|Value|
