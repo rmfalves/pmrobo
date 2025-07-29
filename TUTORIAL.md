@@ -13,6 +13,7 @@ The project has two tasks, "T1" and "T2," with durations of three and five days,
         <task id="T2">
             <duration>5</duration>
         </task>
+    </tasks>
 </project>
 ```
 ### Example 2
@@ -31,6 +32,7 @@ The project has two tasks, "T1" and "T2," with durations of three and five days,
         <task id="T2">
             <duration>5</duration>
         </task>
+    </tasks>
 </project>
 ```
 ### Example 3
@@ -58,6 +60,7 @@ The project has two tasks, "T1" and "T2," with durations of three and five days,
                 <allocation resource-id="TRUCK" level="2"/>
             </allocations>
         </task>
+    </tasks>
 </project>
 ```
 ### Example 4
@@ -87,6 +90,7 @@ The project has two tasks, "T1" and "T2," with durations of three and five days,
                 <allocation resource-id="JD" level="20"/>
             </allocations>
         </task>
+    </tasks>
 </project>
 ```
 ### Example 5
@@ -130,6 +134,7 @@ The same as before, but considering the following calendar constraints:
                 <allocation resource-id="JD" level="20"/>
             </allocations>
         </task>
+    </tasks>
 </project>
 ```
 ## Output
