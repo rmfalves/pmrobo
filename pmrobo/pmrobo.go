@@ -1,5 +1,5 @@
 /****************************************************************************************
-PMRobo - A lighweight and efficient multi-threaded project scheduling engine
+PMRobo - A lightweight and efficient multi-threaded project scheduling engine
 Copyright (C) 2023  Rui Alves
 
 This program is free software: you can redistribute it and/or modify
